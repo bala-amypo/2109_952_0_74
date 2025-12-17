@@ -1,9 +1,12 @@
 package com.example.demo.entity;
-import java.time.LocalDate;
-import jakarta.persitence.Entity;
-import jakarta.persitence.GeneratedValue;
-import jakarta.persitence.GenerationType;
-import jakarta.persitence.Id;
+
+
+import java.time.*;
+import jakarta.persistence.*;
+
+
+
+
 @Entity
 public class Student{
     @Id
@@ -36,6 +39,7 @@ public class Student{
     public void setCgpa(float cgpa){
           this.cgpa=cgpa;
     }
+
     public Long getId(){
         return id;
     } 
@@ -51,4 +55,8 @@ public class Student{
       public float getCgpa(){
         return cgpa;
     } 
+
+
+
+
 }
