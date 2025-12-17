@@ -5,5 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController{
     @PostMapping("/addStudent")
-    public Studen
+    public Student addStudent(@RequestBody Student st){
+        
+    }
 }
