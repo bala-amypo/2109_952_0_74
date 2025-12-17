@@ -17,6 +17,10 @@ public Student postData(Student st){
     return sr.save(st);
 
 }
+@Override
+public List<Student>getAllStudents(){
+    
+}
 
 
 
