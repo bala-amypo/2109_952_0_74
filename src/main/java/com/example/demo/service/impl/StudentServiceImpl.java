@@ -19,7 +19,7 @@ public Student postData(Student st){
 }
 @Override
 public List<Student>getAllStudents(){
-    
+    reeturn stdrepo.findAll;
 }
 
 
