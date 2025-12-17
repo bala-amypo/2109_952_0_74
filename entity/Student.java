@@ -8,5 +8,16 @@ public class Student {
     private String dept;
     private LocalDate dob;
     private float cgpa;
+    public Long getid(){
+        return id;
+    }
+    public void setid(Long id){
+        this.id=id;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setid(String name){
+        this.id=id;
+    }
 }
-void setid(long)
