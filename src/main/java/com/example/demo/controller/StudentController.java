@@ -14,6 +14,7 @@ public class StudentController{
     @PostMapping("/postStudent")
     public Student post(@RequestBody Student st){
         return sr.postData(st);
+        
     }
 
 
