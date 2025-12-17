@@ -3,6 +3,8 @@ import java.time.LocalDate;
 import jakarta.persitence.Entity;
 @Entity
 public class Student{
+    @Id
+    @GeneratedValue(strategy=GenerationType.)
     private Long id;
     private String name;
     private String dept;
