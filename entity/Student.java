@@ -1,5 +1,7 @@
 package com.example.demo.entity;
-import java.time.*;
+import java.time.LocalDate;
+import jakarta.persitence.Entity;
+@Entity
 public class Student{
     private Long id;
     private String name;
@@ -29,7 +31,6 @@ public class Student{
     public void setCgpa(float cgpa){
           this.cgpa=cgpa;
     }
-
     public Long getId(){
         return id;
     } 
@@ -45,8 +46,4 @@ public class Student{
       public float getCgpa(){
         return cgpa;
     } 
-
-
-
-
 }
