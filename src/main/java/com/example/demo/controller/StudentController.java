@@ -5,8 +5,6 @@ import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 
 
-
-
 @RestController
 public class StudentController{
     @Autowired
@@ -21,8 +19,6 @@ public class StudentController{
     }
     @GetMapping("/getById/{id}")
     public Optional<Student>getId(@PathVariable Long id{
-        
+        return stdser.getById(id);
     }
-
-
 }
