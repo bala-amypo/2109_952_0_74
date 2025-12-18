@@ -11,9 +11,16 @@ import com.example.demo.service.StudentService;
 public class StudentController{
     @Autowired
     StudentService sr;
-    @PostMapping("/postStudent")
-    public Student post(@RequestBody Student st){
+    @PostMapping("/addStudent")
+    public Student addStudent(@RequestBody Student st){
         return sr.postData(st);
+    }
+    @GetMapping("/getall")
+    public List<Student>get(){
+        return stdser.getAllStudents();
+    }
+    @GetMapping("/getById/{id}")
+    public Optional<Student>getId(@PathVariable Long id{
         
     }
 
